@@ -1,5 +1,5 @@
 #!/usr/bin/python
-from Tkinter import *
+from tkinter import *
 from turtle import *
 import turtle
 import getopt
@@ -73,7 +73,7 @@ class Langton(object):
 		turtle.mainloop()
 		
 def usage():
-	print "Usage: python langton.py [-i iterations] [-s blockSize] [-g gridSize] [-o outFile] [-h]\n\n" \
+	print ("Usage: python langton.py [-i iterations] [-s blockSize] [-g gridSize] [-o outFile] [-h]\n\n" \
 	    "-i\tNumber of iterations.\n" \
 	    "\tDefault is 10000.\n\n" \
 	    "-s\tSize of the fields.\n" \
@@ -82,7 +82,7 @@ def usage():
 	    "\tDefault is 500 (500x500 px).\n\n" \
 	    "-o\tPath to the eps output file.\n" \
 	    "\tDefault is no output.\n\n" \
-	    "-h\tShows this help";
+	    "-h\tShows this help");
 
 def main(argv):
 	try:
